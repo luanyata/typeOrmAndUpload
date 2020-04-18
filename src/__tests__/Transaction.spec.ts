@@ -1,12 +1,11 @@
-import request from 'supertest';
 import path from 'path';
-import { Connection, getRepository, getConnection } from 'typeorm';
-import createConnection from '../database';
-
-import Transaction from '../models/Transaction';
-import Category from '../models/Category';
+import request from 'supertest';
+import { Connection, getConnection, getRepository } from 'typeorm';
 
 import app from '../app';
+import createConnection from '../database';
+import Category from '../models/Category';
+import Transaction from '../models/Transaction';
 
 let connection: Connection;
 
